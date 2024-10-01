@@ -1,1 +1,1 @@
-view page : https://github.com/abolfazl-mahjoob/CG-Learn
+view page : https://abolfazl-mahjoob.github.io/CG-Learn/
