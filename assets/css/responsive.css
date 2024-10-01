@@ -1,0 +1,57 @@
+@media (max-width: 1300px) {
+    .admin-tools {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100dvh;
+        transform: translateX(-100%);
+        transition: 300ms;
+        margin: 0;
+        z-index: 9;
+    }
+    .admin-tools.show {
+        transform: translateX(0);
+    }
+    #open-tool {
+        display: unset;
+    }
+}
+
+@media (max-width: 1024px) {
+    .wrap-body {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "performance costs"
+            "chart chart"
+            "chart chart"
+            "plans plans"
+            "plans plans";
+    }
+}
+
+@media (max-width: 768px) {
+    .wrap-body {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "performance"
+            "costs"
+            "chart"
+            "plans";
+    }
+    .chart, .plans {
+        padding: 30px;
+    }
+    .plans-body .row {
+        gap: 20px;
+    }
+    .plans-body .row > .time {
+        font-size: 10px;
+    }
+    .detail-plan h5 {
+        font-size: 11px;
+    }
+    .header-actions > a.res-none {
+        display: none;
+    }
+}
